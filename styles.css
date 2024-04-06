@@ -1,0 +1,81 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --title: 600 24px/32px Poppins, sans-serif;
+    --body: 400 16px/24px Lato, sans-serif;
+    --small-text: 600 14px/24px Lato, sans-serif;
+}
+
+/* Global */
+
+body {
+    background-color: #F2F5F9;
+}
+
+/* Card */
+
+.card {
+    max-width: 360px;
+    margin: 96px auto 0 auto;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.card__overlay {
+    width: 100%;
+    margin-top: -96px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 0px 24px 24px 24px;
+}
+
+.card__title {
+    font: var(--title);
+    color: #111729;
+}
+
+.card__description {
+    font: var(--body);
+    color: #677489;
+}
+
+.card__footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 24px;
+    border-top: solid 0.5px #cfcfcf;
+}
+
+.card__author-image {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.card__author-name {
+    font: var(--small-text);
+    color: #111729;
+}
+
+.card__author-position {
+    font: var(--small-text);
+    color: #677489;
+}
